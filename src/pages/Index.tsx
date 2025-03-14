@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Service from '@/components/Service';
@@ -15,11 +14,27 @@ import {
   Users, 
   Shield,
   Phone,
-  Mail
+  Mail,
+  Globe,
+  ExternalLink,
+  MessagesSquare
 } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const { t } = useLanguage();
+
+  const openWhatsApp = () => {
+    window.open(`https://wa.me/48881222856`, '_blank');
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -111,6 +126,75 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Promotion Section */}
+      <section id="promotion" className="py-20 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-cgs-dark-gray mb-12">
+            {t('promotion.title')}
+          </h2>
+          
+          <div className="mb-10">
+            <h3 className="text-xl font-bold text-center text-cgs-dark-gray mb-6">
+              {t('promotion.social')}
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <a 
+                href="https://carinvest-europe.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              >
+                <div className="bg-cgs-red text-white p-3 rounded-full mb-4">
+                  <Globe size={32} />
+                </div>
+                <p className="text-cgs-dark-gray font-medium mb-2">{t('promotion.website')}</p>
+                <p className="text-sm text-gray-500">carinvest-europe.com</p>
+              </a>
+              
+              <a 
+                href="https://www.tiktok.com/@carinvest.krakow?_t=ZM-8ufOfWOBZsl&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              >
+                <div className="bg-cgs-red text-white p-3 rounded-full mb-4">
+                  <ExternalLink size={32} />
+                </div>
+                <p className="text-cgs-dark-gray font-medium mb-2">{t('promotion.tiktok.krakow')}</p>
+                <p className="text-sm text-gray-500">@carinvest.krakow</p>
+              </a>
+              
+              <a 
+                href="https://www.tiktok.com/@car.invest.warsaw?_t=ZM-8ufOdjMC0OL&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              >
+                <div className="bg-cgs-red text-white p-3 rounded-full mb-4">
+                  <ExternalLink size={32} />
+                </div>
+                <p className="text-cgs-dark-gray font-medium mb-2">{t('promotion.tiktok.warsaw')}</p>
+                <p className="text-sm text-gray-500">@car.invest.warsaw</p>
+              </a>
+              
+              <a 
+                href="https://www.tiktok.com/@car.invest.group?_t=ZM-8ufOiex4IUR&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              >
+                <div className="bg-cgs-red text-white p-3 rounded-full mb-4">
+                  <ExternalLink size={32} />
+                </div>
+                <p className="text-cgs-dark-gray font-medium mb-2">{t('promotion.tiktok.group')}</p>
+                <p className="text-sm text-gray-500">@car.invest.group</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section id="about" className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
@@ -159,6 +243,75 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-cgs-dark-gray mb-12">
+            {t('pricing.title')}
+          </h2>
+          
+          <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+            <div className="bg-gradient-to-r from-cgs-red/90 to-cgs-red p-8 text-center text-white">
+              <div className="flex justify-center items-center gap-6">
+                <div className="flex flex-col items-center">
+                  <span className="text-sm font-medium mb-1">{t('pricing.previous')}</span>
+                  <span className="text-2xl font-bold line-through opacity-75">{t('pricing.previous')}</span>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                  <span className="bg-yellow-400 text-cgs-dark-gray px-3 py-1 rounded-full text-sm font-bold mb-1">
+                    {t('pricing.discount')}
+                  </span>
+                  <span className="text-4xl font-bold">{t('pricing.current')}</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-8">
+              <h3 className="text-xl font-bold text-cgs-dark-gray mb-6 text-center">
+                {t('pricing.includes')}
+              </h3>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center gap-3">
+                  <div className="bg-cgs-red/10 text-cgs-red p-2 rounded-full">
+                    <Car size={20} />
+                  </div>
+                  <span className="text-cgs-dark-gray">{t('pricing.preparation')}</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="bg-cgs-red/10 text-cgs-red p-2 rounded-full">
+                    <Image size={20} />
+                  </div>
+                  <span className="text-cgs-dark-gray">{t('pricing.photos')}</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="bg-cgs-red/10 text-cgs-red p-2 rounded-full">
+                    <Share2 size={20} />
+                  </div>
+                  <span className="text-cgs-dark-gray">{t('pricing.placement')}</span>
+                </li>
+              </ul>
+              
+              <div className="flex flex-col items-center">
+                <p className="text-center text-cgs-dark-gray font-medium mb-6">
+                  {t('pricing.payment')}
+                </p>
+                
+                <Button 
+                  size="lg" 
+                  className="bg-cgs-red hover:bg-red-700 text-white w-full sm:w-auto"
+                  onClick={openWhatsApp}
+                >
+                  <MessagesSquare size={20} />
+                  {t('cta.whatsappMessage')}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
@@ -190,7 +343,11 @@ const Index = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">{t('contact.phone')}</p>
-                  <a href="tel:+48881222856" className="text-lg font-bold text-cgs-dark-gray hover:text-cgs-red">
+                  <a 
+                    href="tel:+48881222856" 
+                    className="text-lg font-bold text-cgs-dark-gray hover:text-cgs-red"
+                    onClick={openWhatsApp}
+                  >
                     +48 881 222 856
                   </a>
                 </div>

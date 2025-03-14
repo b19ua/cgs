@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 type Language = 'ru' | 'en' | 'pl' | 'uk';
@@ -155,6 +154,12 @@ const translations = {
     pl: 'Napisz na WhatsApp',
     uk: 'Написати у WhatsApp',
   },
+  'cta.whatsappMessage': {
+    ru: 'Связаться в WhatsApp',
+    en: 'Contact us on WhatsApp',
+    pl: 'Skontaktuj się przez WhatsApp',
+    uk: 'Зв\'язатися у WhatsApp',
+  },
   'contact.title': {
     ru: 'Связаться с нами',
     en: 'Contact us',
@@ -208,6 +213,96 @@ const translations = {
     en: 'Car Invest company website',
     pl: 'Strona firmy Car Invest',
     uk: 'Сайт компанії Car Invest',
+  },
+  'promotion.title': {
+    ru: 'Как мы будем продвигать Ваш автомобиль',
+    en: 'How we will promote your car',
+    pl: 'Jak będziemy promować Twój samochód',
+    uk: 'Як ми просуватимемо Ваш автомобіль',
+  },
+  'promotion.social': {
+    ru: 'Социальные сети компании',
+    en: 'Company social media',
+    pl: 'Media społecznościowe firmy',
+    uk: 'Соціальні мережі компанії',
+  },
+  'promotion.website': {
+    ru: 'Сайт компании Car Invest',
+    en: 'Car Invest company website',
+    pl: 'Strona firmy Car Invest',
+    uk: 'Сайт компанії Car Invest',
+  },
+  'promotion.tiktok.krakow': {
+    ru: 'TikTok Краков',
+    en: 'TikTok Krakow',
+    pl: 'TikTok Kraków',
+    uk: 'TikTok Краків',
+  },
+  'promotion.tiktok.warsaw': {
+    ru: 'TikTok Варшава',
+    en: 'TikTok Warsaw',
+    pl: 'TikTok Warszawa',
+    uk: 'TikTok Варшава',
+  },
+  'promotion.tiktok.group': {
+    ru: 'TikTok Группа',
+    en: 'TikTok Group',
+    pl: 'TikTok Grupa',
+    uk: 'TikTok Група',
+  },
+  'pricing.title': {
+    ru: 'Стоимость услуги',
+    en: 'Service price',
+    pl: 'Cena usługi',
+    uk: 'Вартість послуги',
+  },
+  'pricing.current': {
+    ru: '9999 злотых',
+    en: '9999 PLN',
+    pl: '9999 zł',
+    uk: '9999 злотих',
+  },
+  'pricing.previous': {
+    ru: '13000 злотых',
+    en: '13000 PLN',
+    pl: '13000 zł',
+    uk: '13000 злотих',
+  },
+  'pricing.discount': {
+    ru: 'Скидка!',
+    en: 'Discount!',
+    pl: 'Zniżka!',
+    uk: 'Знижка!',
+  },
+  'pricing.includes': {
+    ru: 'Стоимость включает:',
+    en: 'Price includes:',
+    pl: 'Cena zawiera:',
+    uk: 'Вартість включає:',
+  },
+  'pricing.preparation': {
+    ru: 'Предпродажную подготовку автомобиля',
+    en: 'Pre-sale car preparation',
+    pl: 'Przygotowanie samochodu do sprzedaży',
+    uk: 'Передпродажну підготовку автомобіля',
+  },
+  'pricing.photos': {
+    ru: 'Профессиональную фотосъемку',
+    en: 'Professional photography',
+    pl: 'Profesjonalne zdjęcia',
+    uk: 'Професійну фотозйомку',
+  },
+  'pricing.placement': {
+    ru: 'Размещение на нашем сайте и в социальных сетях',
+    en: 'Placement on our website and social media',
+    pl: 'Umieszczenie na naszej stronie i w mediach społecznościowych',
+    uk: 'Розміщення на нашому сайті та в соціальних мережах',
+  },
+  'pricing.payment': {
+    ru: 'Платеж единоразовый',
+    en: 'One-time payment',
+    pl: 'Płatność jednorazowa',
+    uk: 'Платіж одноразовий',
   },
 };
 
