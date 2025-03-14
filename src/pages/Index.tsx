@@ -252,18 +252,11 @@ const Index = () => {
           
           <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
             <div className="bg-gradient-to-r from-cgs-red/90 to-cgs-red p-8 text-center text-white">
-              <div className="flex justify-center items-center gap-6">
-                <div className="flex flex-col items-center">
-                  <span className="text-sm font-medium mb-1">{t('pricing.previous')}</span>
-                  <span className="text-2xl font-bold line-through opacity-75">{t('pricing.previous')}</span>
-                </div>
-                
-                <div className="flex flex-col items-center">
-                  <span className="bg-yellow-400 text-cgs-dark-gray px-3 py-1 rounded-full text-sm font-bold mb-1">
-                    {t('pricing.discount')}
-                  </span>
-                  <span className="text-4xl font-bold">{t('pricing.current')}</span>
-                </div>
+              <div className="flex flex-col items-center gap-4">
+                <span className="bg-yellow-400 text-cgs-dark-gray px-4 py-2 rounded-full text-lg font-bold">
+                  {t('pricing.promotion')}
+                </span>
+                <span className="text-3xl font-bold">{t('pricing.discount')}</span>
               </div>
             </div>
             

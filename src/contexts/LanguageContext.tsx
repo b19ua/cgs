@@ -256,23 +256,17 @@ const translations = {
     pl: 'Cena usługi',
     uk: 'Вартість послуги',
   },
-  'pricing.current': {
-    ru: '9999 злотых',
-    en: '9999 PLN',
-    pl: '9999 zł',
-    uk: '9999 злотих',
-  },
-  'pricing.previous': {
-    ru: '13000 злотых',
-    en: '13000 PLN',
-    pl: '13000 zł',
-    uk: '13000 злотих',
+  'pricing.promotion': {
+    ru: 'Специальное предложение!',
+    en: 'Special offer!',
+    pl: 'Oferta specjalna!',
+    uk: 'Спеціальна пропозиція!',
   },
   'pricing.discount': {
-    ru: 'Скидка!',
-    en: 'Discount!',
-    pl: 'Zniżka!',
-    uk: 'Знижка!',
+    ru: 'Скидка 30% на всю услугу!',
+    en: '30% discount on the entire service!',
+    pl: '30% zniżki na całą usługę!',
+    uk: 'Знижка 30% на всю послугу!',
   },
   'pricing.includes': {
     ru: 'Стоимость включает:',
