@@ -13,7 +13,9 @@ import {
   TrendingUp, 
   Award, 
   Users, 
-  Shield 
+  Shield,
+  Phone,
+  Mail
 } from 'lucide-react';
 
 const Index = () => {
